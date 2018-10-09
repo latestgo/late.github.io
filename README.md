@@ -1,2 +1,2 @@
-# late.github.io
+# latestgo.github.io
 博客gitpages
