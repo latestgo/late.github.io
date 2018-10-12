@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-url: http://blog.isohard.com
+url: http://latestgo.github.io
 author: latestgo
 highlighter: rouge
 exclude: ["Rakefile", "CNAME", "README.md"]
