@@ -1,4 +1,7 @@
 markdown: kramdown
+kramdown:
+  input: GFM
+  systax_hightlighter: rouge
 permalink: /:year/:month/:day/:title/
 url: http://latestgo.github.io
 author: latestgo
