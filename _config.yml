@@ -1,7 +1,16 @@
 markdown: kramdown
 kramdown:
-  input: GFM
-  systax_hightlighter: rouge
+  input:                     GFM
+  auto_ids:                  true
+  footnote_nr:               1
+  entity_output:             as_char
+  toc_levels:                1..6
+  smart_quotes:              lsquo,rsquo,ldquo,rdquo
+  enable_coderay:            false
+  hard_wrap:                 false
+  syntax_highlighter:        rouge
+  transliterated_header_ids: true
+  footnote_backlink:         "&#8617;&#xfe0e;"
 permalink: /:year/:month/:day/:title/
 url: http://latestgo.github.io
 author: latestgo
