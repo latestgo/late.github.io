@@ -15,52 +15,52 @@ tags:
 
 - Person类
 
-	```java
-	class Person {
-		private String name;
-		private int age;
-		public void setName(String name) {
-			this.name = name;
-		}
-		public void setAge(int age) {
-			this.age = age;
-		}
-		public String getName() {
-			return this.name;
-		}
-		public int getAge() {
-			return this.age;
-		}
+```java
+class Person {
+	private String name;
+	private int age;
+	public void setName(String name) {
+		this.name = name;
 	}
-	```
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public int getAge() {
+		return this.age;
+	}
+}
+```
 
 - Student类
 
-	```java
-	class Student {
-		private String name;
-		private int age;
-		public String school;
-		public void setName(String name) {
-			this.name = name;
-		}
-		public void setAge(int age) {
-			this.age = age;
-		}
-		public String getName() {
-			return this.name;
-		}
-		public int getAge() {
-			return this.age;
-		}
-		public void setSchool(String school) {
-			this.school = school;
-		}
-		public String getSchool() {
-			return this.school;
-		}
+```java
+class Student {
+	private String name;
+	private int age;
+	public String school;
+	public void setName(String name) {
+		this.name = name;
 	}
-	```
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return this.name;
+	}
+	public int getAge() {
+		return this.age;
+	}
+	public void setSchool(String school) {
+		this.school = school;
+	}
+	public String getSchool() {
+		return this.school;
+	}
+}
+```
 
 以上的代码中是两个简单Java类，那么通过不断编写类似的就可以发现，程序之中会有重复的代码。
 
@@ -146,27 +146,27 @@ public class TestDemo {
 
 虽然从本质上来讲继承的子类可以对父类的擦作进行共享，但是从另外一个角度来说，继承本身也是存在有一些限制的。 
 
-1. 子类对象在进行实例化前一定会首先实例化父类对象，默认调用父类的构造方法后，再调用子类的构造方法进行子类对象实例化；	
+- 子类对象在进行实例化前一定会首先实例化父类对象，默认调用父类的构造方法后，再调用子类的构造方法进行子类对象实例化；	
 
-	```java			
-	class Person {
-		public Person() {
-			System.out.println("Person类对象创建");
-		}
+```java			
+class Person {
+	public Person() {
+		System.out.println("Person类对象创建");
 	}
-	class Student extends Person {
-		public Student() {
-			//既然是要进行构造方法的调用，那么构造方法的调用一定要放在构造方法的首行
-			super(); //此语句在无参时写与不写一样
-			System.out.println("Student类对象创建");
-		}
+}
+class Student extends Person {
+	public Student() {
+		//既然是要进行构造方法的调用，那么构造方法的调用一定要放在构造方法的首行
+		super(); //此语句在无参时写与不写一样
+		System.out.println("Student类对象创建");
 	}
-	public class MyDemo {
-		public static void main(String[] args) {
-			new Student(); //进行子类对象实例化
-		}
+}
+public class MyDemo {
+	public static void main(String[] args) {
+		new Student(); //进行子类对象实例化
 	}
-	```
+}
+```
 
 	没有一条语句会明确调用父类构造，但是父类构造被执行了。所以子类对象的实例化一定会实例化其父类对象。
 
@@ -174,11 +174,11 @@ public class TestDemo {
 
 	同时需要注意的是，如果此时父类中没有提供有无参构造，那么就必须使用`super()`明确的指明需要调用的父类构造方法。
 
-2. Java中只允许单继承，不允许多继承；
+- Java中只允许单继承，不允许多继承；
 
 	一个子类只能继承一个父类，若同时需要拥有两个类的属性和操作，那么可以采用多层继承的形式完成。
 
-3. 在继承的时候，子类会继承父类的所有结构，但是需要注意非私有操作属于显示继承（直接调用），而所有的私有操作属于隐式继承（通过其他形式调用，例如：`setter`，`getter`）。
+- 在继承的时候，子类会继承父类的所有结构，但是需要注意非私有操作属于显示继承（直接调用），而所有的私有操作属于隐式继承（通过其他形式调用，例如：`setter`，`getter`）。
 
 	父类中的属性的确被子类所继承了，而子类能够使用的只是所有的非`private`操作（`public`），所有的`private`无法直接使用，所以称为隐式继承。
 
