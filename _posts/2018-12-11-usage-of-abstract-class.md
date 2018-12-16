@@ -1,3 +1,11 @@
+---
+layout: post
+title: "抽象类的定义与使用"
+categories: Java
+tag: abstract
+author: "latestgo"
+---
+
 在以后所有的进行的项目开发之中，不要出现一个类去继承一个已经实现好的类，而只能继承抽象类和接口。
 
 对象多态性的核心本质在于方法的重写，那么如果现在子类没有去进行指定方法的重写，这样的操作就有些不合要求的。所以如果要对子类的方法进行一些强制的要求就必须采用抽象类来解决。
@@ -220,7 +228,7 @@ abstract class Action {
 	public abstract void worker();
 }
 ```
-![![1](../assets/PNG&#32;image&#32;2.png)](https://img-blog.csdnimg.cn/2018121120482094.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+![/assets/PNG&#32;image&#32;2.png](https://img-blog.csdnimg.cn/2018121120482094.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
 
 **范例：** 定义各个行为的子类
 ```java
