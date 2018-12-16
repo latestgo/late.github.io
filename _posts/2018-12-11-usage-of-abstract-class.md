@@ -228,7 +228,7 @@ abstract class Action {
 	public abstract void worker();
 }
 ```
-![/assets/PNG&#32;image&#32;2.png](https://img-blog.csdnimg.cn/2018121120482094.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+![PNG image 2.png](https://img-blog.csdnimg.cn/2018121120482094.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
 
 **范例：** 定义各个行为的子类
 ```java
