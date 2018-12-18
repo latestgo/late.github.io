@@ -46,7 +46,7 @@ public class TestDemo {
 **说明：** 关于Number类
 
 - Number类的定义：`public abstract class Number extends Object implements Serializable`；
-- 在Number类中的里面定义了6重要的方法。`byteValue()`, `doubleValue()`, `	floatValue()`, `intValue()`, `	longValue()`, `shortValue()`。
+- 在Number类中的里面定义了6重要的方法。`byteValue()`, `doubleValue()`, `floatValue()`, `intValue()`, `longValue()`, `shortValue()`。
 
 # 装箱和拆箱操作
 
@@ -80,6 +80,7 @@ public class TestDemo {
 }
 ```
 以上的操作采用的手工的装箱和拆箱操作形式，而这种做法是在JDK1.5之前的做法，而从JDK1.5开始就提供有自动装箱和自动拆箱操的机制，最为重要的是，由于此类机制的存在，可以直接利用包装类的对象进行各种数学计算
+
 **范例：** 自动装箱与自动拆箱
 ```java
 public class TestDemo {
@@ -91,6 +92,7 @@ public class TestDemo {
 }
 ```
 但是这个时候依然会存在“==”和equals()问题。
+
 **范例：** 观察问题
 ```java
 public class TestDemo {

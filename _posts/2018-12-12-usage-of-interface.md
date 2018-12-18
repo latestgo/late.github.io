@@ -48,7 +48,7 @@ public class TestDemo {
 } 
 ```
 当一个子类继承了多个接口之后，并且接口对象通过子类进行实例化，那么多个父接口之间允许互相转换。
-![![IMG_0008.jpg](assets\IMG_0008.jpg)](https://img-blog.csdnimg.cn/20181211214533898.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+![IMG_0008.jpg)](https://img-blog.csdnimg.cn/20181211214533898.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
 
 # 接口的使用限制
 
@@ -142,7 +142,7 @@ class NewsImpl extends AbstractMessage implements INews{
 	}
 }
 ```
-![![PNG image 3.png](assets\PNG image 3.png)](https://img-blog.csdnimg.cn/20181211230043499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+![PNG image 3.png](https://img-blog.csdnimg.cn/20181211230043499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
 
 一个接口可以使用`extends`来继承多个接口。
 ```java
@@ -265,6 +265,7 @@ public class TestDemo {
 Java实现可移植的关键是JVM，也就是说所有的程序在JVM上执行，而不同的操作系统有匹配的JVM，那么相当于程序 ——>JVM ——>操作系统。
 
 这个时候new是整个开发过程之中最大的耦合元凶，而在开发之中要想进行解耦合的关键就在于要引入第三方，所以这个类可以使用`Factory`来描述。
+
 **范例：** 通过Factory设计来描述
 ```java
 interface IFruit {//定义水果的操作
@@ -304,12 +305,14 @@ public class TestDemo {
 } 
 ```
 当更换使用的IFruit子类的时候主方法没有任何主方法没有任何变化就可以实现了子类的变更，这样的设计就是工厂设计模式。
+
 **总结：** 编写的接口如果要想取得接口的实例化对象，第一反应：写工厂类。
 
 # 接口设计设计模式：代理设计模式（Proxy）
 
 所谓的代理严格来讲就是两个字类共同实现一个接口，其中一个子类负责真实的业务实现，而另外的子类负责辅助真实业务主题的操作。
 ![PNG image 6.png](https://img-blog.csdnimg.cn/20181214005518186.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+
 **范例：** 实现代理设计
 ```java
 interface ISubject {
@@ -361,6 +364,7 @@ public class TestDemo {
 # 抽象类的区别
 
 抽象类和接口都属于常用的类结构设计，在开发之中都会出现，按照优先选择来讲，接口一定要比抽象类更方便。从概念上来将两者对比：
+
 | No | 区别 | 抽象类 |接口 |
 | --- | --- | --- | --- |
 | 1 | 关键字 | abstract class 类名称 {} | interface 接口名称 {} |

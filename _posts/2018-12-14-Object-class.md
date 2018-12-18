@@ -26,16 +26,19 @@ public class TestDemo {
 } 
 ```
 所以在开发之中Object类是参数的最高统一类型。但是Object类本身也具备有一些定义的的方法。
+
 | No | 方法名称 | 类型 | 描述 |
 | --- | --- | --- | --- |
 | 1 | public Object() | 构造 | 无参构造是专门为子类提供服务的 |
 | 2 | public String toString() | 普通 | 取得对象信息 |
 | 3 | public boolean equals​(Object obj) | 普通 | 对象比较 |
+
 对于整个Object类中方法都需要熟悉。
 
 # 取得对象信息
 
 在使用对象直接输出的时候，默认情况是输出一个地址编码。但是如果使用String类时，输出的就是内容，主要的原因就是`toString()`方法问题。
+
 **范例：** String对象输出
 ```java
 class Person {
@@ -57,6 +60,7 @@ public class TestDemo {
 } 
 ```
 默认情况下Object类中提供的`toString()`方法只能够得到一个对象的地址（这是所有对象都共有具备的特征）。而如果默认的toString()功能不足，可以在需要的子类中重写toString()方法。
+
 **范例：** 重写toString()方法
 ```java
 class Person {
@@ -150,6 +154,7 @@ public class TestDemo {
 # Object接收引用数据类型
 
 Object可以接收任意的对象，因为Object是所有类的父类，但是Object的概念不仅仅局限于此，它可以接收所有的引用数据类型，包括：数据、接口。
+
 **范例：** 使用Object接收数组对象
 ```java
 public class TestDemo {
@@ -165,6 +170,7 @@ public class TestDemo {
 } 
 ```
 而Object可以接受接口更是Java中的强制性要求，因为接口本身是不可能继承任何类的，所以这种的类型的接收是自己的规定。
+
 **范例：** 使用Object接收接口对象
 ```java
 interface IMessage {}

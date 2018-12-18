@@ -87,9 +87,7 @@ class Person {
 		return this.age;
 	}
 }
-
 class Student extends Person {}
-
 public class TestDemo {
 	public static void main(String[] args) {
 		Student stu = new Student(); //实例化子类
