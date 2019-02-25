@@ -48,7 +48,7 @@ public class TestDemo {
 } 
 ```
 当一个子类继承了多个接口之后，并且接口对象通过子类进行实例化，那么多个父接口之间允许互相转换。
-![IMG_0008.jpg)](https://img-blog.csdnimg.cn/20181211214533898.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
+![IMG_0008.jpg](https://img-blog.csdnimg.cn/20181211214533898.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L21yYmFja2Vy,size_16,color_FFFFFF,t_70)
 
 # 接口的使用限制
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "异常的捕获和处理"
+title: "链表的实现"
 categories: Java
 tag: LinkedList
 author: "latestgo"
@@ -129,6 +129,7 @@ class Link {
         return this.count;
     }
     ```
+
 # 判断是否为空链表:public boolean isEmpty()
 
 如果根元素为null或元素个数为0，则认为是一个空链表，则isEmpty()返回true；
@@ -184,6 +185,7 @@ public boolean containsNode(Object search) {
     }
 }
 ```
+
 Link类中的contains方法：
 ```java
 public boolean contains(Object search) {
@@ -231,6 +233,7 @@ public void setNode(int index, Object newData) {
             this.next.setNode(index, newData);
 }
 ```
+
 Link类中的set方法：
 ```java
 public void set(int index, Object newData) {
